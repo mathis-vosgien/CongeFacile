@@ -74,14 +74,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $hashedPassword = password_hash($data['password'], PASSWORD_BCRYPT);
       $stmtUser = $bdd->prepare("
                 INSERT INTO user 
-                  (person_id, email, password)
+                  (person_id, email, password, role)
                 VALUES 
-                  (:person_id, :email, :password)
+                  (:person_id, :email, :password, :role)
             ");
       $stmtUser->execute([
         'person_id' => $person_id,
         'email'     => $data['userEmail'],
-        'password'  => $hashedPassword
+        'password'  => $hashedPassword,
+        'role' => 'collaborateur'
       ]);
 
       $bdd->commit();

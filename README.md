@@ -1,111 +1,95 @@
-# CongeFacile
+CongeFacile est une application web de gestion des congés conçue pour simplifier et automatiser les processus de demande et d'approbation des congés en entreprise. Avec CongeFacile, plus besoin d'aller voir votre manager pour lui faire part de vos demandes de congés. Désormais, une simple connexion à ce portail vous permettra de rédiger votre demande ; le manager pourra ensuite décider du sort de celle-ci.
 
 
 
 
+Ce projet a été réalisé par ANDRE ANTOINE, VOSGIEN MATHIS, DE OLIVEIRA DIEGO et CARRON ALEXIS, élèves de BTS 1 dans le cadre de leur apprentissage.
 
 
 
+Voici différentes fonctionnalités disponibles sur CongeFacile :
 
+En tant que Manager, il est possible de :
 
 
-CongéFacile est une application web de gestion des congés conçue pour simplifier et automatiser les processus de demande et d'approbation des congés en entreprise, avec CongeFacile plus besoin d'aller voir votre manager pour lui faire part de vos demandes de congés, désormais une simple connexion à ce portail vous permettra de rédiger votre demande, le manager pourra ensuite décider du sort de cette demande.
+ - Accéder aux différentes demandes en attente dans votre département
 
+ - Consulter le détail d'une demande
 
-Ce projet a été réalisé par ANDRE ANTOINE, VOSGIEN MATHIS, DE OLIVEIRA DIEGO et CARRON ALEXIS, élèves de BTS 1 dans le cadre de leurs apprentissage.
+ - Accéder à l'historique des demandes
 
-Voici différentes fonctionnalitées disponible sur CongeFacile : 
+ - Accéder à la page "Mon équipe", qui permet d'ajouter/retirer des membres de votre équipe et de consulter leurs profils
 
-En tant que Manager, il est possible de : 
+ - Accéder à la page des statistiques des demandes
 
-	- Accès aux différentes demande en attentes dans votre département
- 	- Possibilités de consulter le détail d'une demande
-  	- Accès à l'historique des demandes
-   	- Accès à la page "Mon équipe" qui permet d'ajouter/retirer des membres de votre équipe, de consulter leurs profils
-    	- Accès à la page des statistiques des demandes
-        - Accés au domaine "Administration" afin de gérer les postes, types de demandes, managers et les services ! 
+ - Accéder au domaine "Administration" afin de gérer les postes, types de demandes, managers et les services
 
 
-En tant que Collaborateur, il est possible de : 
 
-	- Accès à la possibilité d'effectuer une nouvelle demande
- 	- Accès à l'historique de vos demandes
-  	- Accès au détail de vos demandes
+En tant que Collaborateur, il est possible de :
 
 
+ - Effectuer une nouvelle demande
 
-Pour démarrer le projet suivez ces étapes clés : 
+ - Accéder à l'historique de vos demandes
 
-	- Avoir un serveur WEB d'installer sur votre PC, pour ce projet nous vous conseillons XAMPP
- 	- Installer le dépot Github de CongeFacile en local, si ZIP, le déZIP.
-  	- Une fois déZIP, suivez ce chemin (l'adapter à votre pc) C:/ xampp -> htdocs, déposez CongeFacile dans ce dossier htdocs
-   	- Ouvrir votre application de serveur WEB (XAMPP)
-    	- Démarrer le serveur Apache et le serveur MYSQL
-     	- Dans votre navigateur, entrer localhost/(chemin d'accès à CongeFacile)/pages/commun/
-      	- Entrez vos logins pour accéder à CongeFacile
-       	- Vous êtes prêt à découvrir CongeFacile !
+ - Accéder au détail de vos demandes
 
+ 
 
+Pour démarrer le projet, suivez ces étapes clés :
 
- Ce projet a été réalisé en groupe de 4 par des élèves de BTS 1 au lycée Saint-Vincent à Senlis, nous avions une maquette donner par nos professeurs, un aspect professionnel a été mis en place au sein de ce projet, nous devions répondre à un cahier des charges donné par notre professeur qui s'averait ici être notre client
 
 
- Les technologies utilisées sont :
-   Back : 
-  	- PHP
-        - SQL
+ - Avoir un serveur WEB installé sur votre PC. Pour ce projet, nous vous conseillons XAMPP
 
-  	
-   Front :
-   	- HTML 
-    	- CSS
-     	- JS
-  		
+ - Installer le dépôt GitHub de CongeFacile en local (si fichier ZIP, le dézipper, ou cloner le projet sur votre PC directement)
 
+ - Installer le fichier .sql et l'importer dans une base de données de PHPMyAdmin (cliquez sur admin de l'onglet mySql dans l'interface xampp) que vous nommerez "conge-facile" 
 
-Pour ce projet, nous nous sommes également aidé de l'IA, elle nous a été très utile dans toutes les fonctionnalitées où nous avions des doutes, elle a aussi été un gain de temps pour certains aspects, notamment le visuel, où elle a permis de faire avancer plus vite le projet.
+ - Une fois dézippé, suivez ce chemin (à adapter à votre PC) : C:/xampp/htdocs, et déposez CongeFacile dans ce dossier htdocs
 
+ - Ouvrir votre application de serveur WEB (XAMPP)
 
+ - Démarrer le serveur Apache et le serveur MySQL
 
+ - Dans votre navigateur, entrer : localhost/(chemin d'accès à CongeFacile)/pages/commun/
 
+ - Entrez vos identifiants pour accéder à CongeFacile
 
+ - Vous êtes prêt à découvrir CongeFacile !
 
 
 
+Pour tester le projet en tant que Manager, vous pouvez vous connecter avec l'identifiant suivant :
+manager@gmail.com — Mot de passe : manager123
 
 
 
+Pour le tester en tant que Collaborateur, vous pouvez vous connecter avec l'identifiant suivant :
+collaborateur1234@gmail.com — Mot de passe : Collaborateur1234!
 
 
 
+Ce projet a été réalisé en groupe de 4 par des élèves de BTS 1 au lycée Saint-Vincent à Senlis.
+Nous avions une maquette donnée par nos professeurs. Un aspect professionnel a été mis en place au sein de ce projet : nous devions répondre à un cahier des charges donné par notre professeur, qui s'avérait ici être notre client.
 
 
 
+Les technologies utilisées sont :
 
+Back-end :
 
+PHP (8.2.12)
 
+SQL
 
+Front-end :
 
+HTML
 
+CSS
 
+JS
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-
+Pour ce projet, nous nous sommes également aidés de l'IA. Elle nous a été très utile dans toutes les fonctionnalités où nous avions des doutes. Elle a aussi été un gain de temps pour certains aspects, notamment le visuel, où elle a permis de faire avancer plus rapidement le projet.

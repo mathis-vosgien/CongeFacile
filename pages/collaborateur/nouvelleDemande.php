@@ -75,14 +75,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $data['dateDebut'] = date('Y-m-d', strtotime($data['dateDebut']));
   $data['dateFin'] = date('Y-m-d', strtotime($data['dateFin']));
 
-  foreach ($Requetes as $Requete) {
-    $start = $Requete['start_at'];
-    $end = $Requete['end_at'];
-
-    if (!($data['dateFin'] < $start || $data['dateDebut'] > $end)) {
-      $errors['dateDebut'] = "Vous avez déjà une demande de congé qui doit être/a été traité à cette période.";
-    }
-  }
 
   $date = date("Y-m-d H:i:s");
   $collaborateurId = $_SESSION['utilisateur']['id'];
@@ -129,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <div class="ContainerNouvelleDemande page">
     <section class="nouvelleDemandeSection">
       <h1>Effectuer une nouvelle demande</h1>
-      <form class="nouvelleDemandeForm" method="POST">
+      <form class="nouvelleDemandeForm" method="POST" novalidate >
         <label for="typeDemande">Type de demande</label>
         <select id="typeDemande" name="typeDemande">
           <?php foreach ($TypesConge as $type) { ?>
